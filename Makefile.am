@@ -12,6 +12,7 @@ noinst_PROGRAMS = build68k gencpu sampleprog
 build68k_SOURCES = build68k.c
 
 gencpu_SOURCES = gencpu.c readcpu.c cpudefs.c missing.c
+gencpu_CFLAGS = $(AM_CFLAGS)
 
 sampleprog_SOURCES = sampleprog.c
 
